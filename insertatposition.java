@@ -12,11 +12,11 @@ public class insertatposition {
         int pos = sc.nextInt();
         System.out.print("element to insert: ");
         int element = sc.nextInt();
-        if (pos < 1 || pos > size + 1) {
+        if (pos < 1 || pos > size + 1){
             System.out.println("out of position");
         }
         int newarr[] = new int[size + 1];
-        for (int i=0,j= 0;i<newarr.length; i++) {
+         for (int i=0,j= 0;i<newarr.length; i++) {
             if (i==pos-1) {
                 newarr[i] = element;  
             } else {
@@ -27,6 +27,6 @@ public class insertatposition {
         for (int num : newarr) {
             System.out.print(num + " ");
         }
-
     }
 }
+
